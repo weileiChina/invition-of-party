@@ -2108,7 +2108,60 @@ Copyright (c) 2015 Daniel Eden
 	-webkit-animation-name: rotateInDownLeft;
 	animation-name: rotateInDownLeft
 }
+/*=========与rotateInDownLeft效果相反==============*/
+.rotatefan {
+	-webkit-animation-name: rotatefan;
+	animation-name: rotatefan
+}
+@keyframes rotatefan {
+	0% {
+		-webkit-transform-origin: left bottom;
+		-ms-transform-origin: left bottom;
+		transform-origin: left bottom;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 0
+	}
+	100% {
+			-webkit-transform-origin: left bottom;
+		-ms-transform-origin: left bottom;
+		transform-origin: left bottom;
+		-webkit-transform: rotate3d(0, 0, 1, -45deg);
+		-ms-transform: rotate3d(0, 0, 1, -45deg);
+		transform: rotate3d(0, 0, 1, -30deg);
+		opacity: 1
+	}
+}
 
+/*==========rotateInUpRight角度大一些=============*/
+@keyframes rotateInUpRightover {
+	0% {
+		-webkit-transform-origin: right bottom;
+		-ms-transform-origin: right bottom;
+		transform-origin: right bottom;
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		-ms-transform: rotate3d(0, 0, 1,0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+		opacity: 0
+	}
+	100% {
+		-webkit-transform-origin: right bottom;
+		-ms-transform-origin: right bottom;
+		transform-origin: right bottom;
+		-webkit-transform: rotate3d(0, 0, 1, 30deg);
+		-ms-transform: rotate3d(0, 0, 1,60deg);
+		transform: rotate3d(0, 0, 1,20deg);
+		opacity: 1
+	}
+}
+
+.rotateInUpRightover {
+	-webkit-animation-name: rotateInUpRightover;
+	animation-name: rotateInUpRightover
+}
+
+/*===========================================================*/
 @-webkit-keyframes rotateInDownRight {
 	0% {
 		-webkit-transform-origin: right bottom;
@@ -3207,54 +3260,3 @@ Copyright (c) 2015 Daniel Eden
 	-webkit-animation-name: slideOutUp;
 	animation-name: slideOutUp
 }
-
-@keyframes rotateYuan {
-	0% {
-		-webkit-transform: rotate(0);
-		-ms-transform: rotate(0);
-		transform: rotate(0)
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		transform: rotate(360deg)
-	}
-}
-
-.rotateYuan{
-	-webkit-animation-name: rotateYuan;
-	animation-name: rotateYuan;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-}
-
-@keyframes sx {
-	0% {
-		-webkit-transform: scale(1.3);
-		-ms-transform: scale(1.3);
-		transform: scale(1.3);
-	}
-	30% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		transform: scale(1);
-	}
-	60% {
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	
-	100% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		transform: scale(1)
-	}
-}
-.sx{
-	-webkit-animation-name: sx;
-	animation-name: sx;
-}
-
-
-

@@ -1,0 +1,330 @@
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+ul,ol,dl{list-style:none;}
+img { border:none; vertical-align:top; display: block;}
+table { border-collapse:collapse; }
+input,textarea { outline:none; border:none;}
+textarea { resize:none; overflow:auto; }
+body { font-size:12px; font-family:"微软雅黑" "Time New Roman"; }
+a { text-decoration:none;color:#5d5d5d; }
+a:hover{text-decoration:underline;color:#f60;}
+
+
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+.swiper-container,.swiper-wrapper,.swiper-slide{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.swiper-slide{position: relative;}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+
+.pic{
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	bottom: 20%;
+	width: 60%;
+	height: 30%;
+}
+.pic img{
+	width: 100%;
+	height: 100%;
+}
+.picbig{
+	position: absolute;
+	z-index: 10;
+	left: 7%;
+	bottom: 30%;
+	width: 70%;
+	height: 50%;
+}
+/*.ani{z-index: 100;}*/
+.year{
+	position: absolute;
+	left: 20%;
+	top: 9%;
+	width:40%;
+	height: 12%;
+	}
+	
+.party{
+	position: absolute;
+	left: 30%;
+	top: 30%;
+	width:33%;
+	height: 11%;
+	}
+.txt{
+	position: absolute;
+	/*left: 18%;
+	top: 21%;*/
+	width:70%;
+	height: 11%;
+	color: #FFFFFF;
+	font-size: 23px;
+	transform:rotate(-16deg) ;
+	font-family: "微软雅黑";
+	animation:txt 1s linear both;
+	z-index: 100;
+}
+
+@keyframes txt{
+	from{opacity: 0;left: 0%;	top: 20%;}
+	to{opacity:1;left: 18%;	top: 21%;}
+}
+
+.two{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	z-index: 1;
+}
+.two .bk{
+	opacity: 0.7;
+	width: 90%;
+	height: 95%;
+	margin: 5%;
+	position: absolute;
+}
+strong{
+	position: absolute;
+	font-size: 30px;
+    color: #0a2805;
+}
+.young{
+	left: 12%;
+	top: 15%;
+}
+.future{
+	left: 35%;
+	top: 22%;
+}
+.nei{
+	position: absolute;
+	left: 12%;
+	top: 40%;
+	font-size: 17px;
+    color: #0a2805;
+    font-weight: bold;
+    width: 80%;
+    line-height: 2;
+}
+.ye{
+	position: absolute;
+	width: 35%;
+	height: 25%;
+	bottom: -20px;
+	left: -5px;
+}
+.yeup{
+	position: absolute;
+	width: 35%;
+	height: 25%;
+	top: -15px;
+	right: 5px;
+	/*z-index: -1;*/
+}
+
+.three{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+.three .inner{
+	position: absolute;
+	left: 13%;
+	top: 13%;
+	transform: rotate(7deg);
+	width: 75%;
+	height: 65%;
+}
+.three_t{
+	position: absolute;
+	left: 10%;
+	bottom: 33%;
+	width:100%;
+	height: 80px;
+
+}
+.three_t p{
+	font-size: 15px;
+	width:300px;
+    color: #0a2805;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.three_tt{
+	position: absolute;
+	left: 10%;
+	bottom: 15%;
+	width:100%;
+	height: 80px;
+
+}
+.three_tt p{
+	font-size: 15px;
+	width:300px;
+    color: #0a2805;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.three_ttt{
+	position: absolute;
+	left: 10%;
+	bottom: 5%;
+	width:100%;
+	height: 80px;
+
+}
+.three_ttt p{
+	font-size: 15px;
+	width:300px;
+    color: #0a2805;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.four{
+	position: absolute;
+	bottom: 15%;
+	left: 10%;
+	width: 50%;
+	height: 6%;
+}
+.yisheng{
+	position: absolute;
+	right: -60%;
+	bottom: -120%;
+}
+.photo1{
+	position: absolute;
+	left: 30%;
+	top: 30%;
+	width: 70%;
+	height: 26%;
+}
+.photo2{
+	position: absolute;
+	right: 20%;
+	top: 30%;
+	width: 50%;
+	height: 40%;
+}
+
+.five{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 30%;
+	height: 15%;
+}
+.five1{
+	position: absolute;
+	right: 25%;
+	top: 10%;
+	width: 20%;
+	height: 6%;
+}
+.five2{
+	position: absolute;
+	right: 10%;
+	top: 18%;
+	width: 20%;
+	height: 6%;
+}
+
+.five_txt{
+	position: absolute;
+	bottom: 45%;
+	left: 6%;
+	font-size: 20px;
+    color: #0a2805;
+    line-height: 2;
+}
+.five_txt p{
+	text-align: center;
+}
+
+.point{
+	position: absolute;
+	bottom: 10%;
+	left: 15%;
+	width: 70%;
+	height: 29%;
+	border: 1px solid #999;
+	
+}
+/*底部按钮*/
+#btn{
+	width: 50px;
+    height: 28px;
+    background:url(../img/units-icons.png) -60px -12px;
+    position:fixed;
+    bottom: 1%;
+    left: 50%;
+    margin: -14px 0 0 -25px;
+    z-index: 10000;
+    animation: start 1s linear infinite;
+ }
+
+ @keyframes start{
+	0%,30%{opacity:0;transform:translate(0,10px)}
+ 	60%{opacity:1;transform:translate(0,0)}
+    100%{opacity:0;transform:translate(0,-8px)}
+ }
+ /*音乐按钮*/
+#music{
+	width: 29px;
+  	height: 29px;
+  	border-radius: 30px;
+  	position: fixed;
+  	right: 9px;
+  	top: 15px;
+  	background: url(../img/css_sprite01.png);
+  	background-size:83px 200px ;
+  	overflow: hidden;
+  	z-index: 1000;
+  	animation: music 1s linear infinite;
+}
+@keyframes music{
+  	from{transform: rotate(0);}
+  	to{transform: rotate(360deg);}
+  }
+  
+
+/*分页器样式重写*/
+.swiper-pagination {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	text-align: right;
+	width: 96%;
+}
+
+
+.swiper-container-vertical>.swiper-pagination-progress {
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.swiper-pagination-progress .swiper-pagination-progressbar {
+    background: #64AE34;
+  }
